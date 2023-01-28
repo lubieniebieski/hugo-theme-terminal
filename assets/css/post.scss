@@ -70,6 +70,16 @@
 
   &-content {
     margin-top: 30px;
+    a {
+      color: inherit;
+      text-decoration-color: $accent;
+      text-decoration-style: dashed;
+
+      &:hover {
+        font-weight: bold;
+        color: $accent;
+      }
+    }
   }
 
   &-cover {
