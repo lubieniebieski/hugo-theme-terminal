@@ -67,6 +67,10 @@
     }
   }
 
+  a:hover {
+    color: $accent;
+  }
+
   .spacer {
     flex-grow: 1 !important;
   }
