@@ -1,5 +1,5 @@
 {{ if .Get "src" }}
-  <a href="{{ .Get "src" | safeURL }}">
-    <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "position"}}{{ . }}{{ else }}left{{ end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}"{{ end }}>
-  </a>
+<a href="{{ .Get "src" | safeURL }}">
+  <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} {{ with .Get "width" }} width="{{ . | plainify }}" {{ end }} {{ with .Get "height" }} height="{{ . | plainify }}" {{ end }} />
+</a>
 {{ end }}
