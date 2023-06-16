@@ -96,6 +96,10 @@
       &:hover {
         color: $accent;
       }
+      &.footnote-backref, &.footnote-ref, &.hanchor {
+        background: none;
+        color: $accent;
+      }
     }
   }
 
